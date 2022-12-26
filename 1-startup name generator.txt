@@ -1,0 +1,4 @@
+print("Welcome to your New Startup Name Generator.")
+adjective = input("Best adjective for your signature product?\n")
+product = input("What do you sell?\n")
+print("Your new Startup name could be " + adjective + " " + product)
