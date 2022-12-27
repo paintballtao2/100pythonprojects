@@ -1,0 +1,27 @@
+print("What is the total daily hospital bill?")
+size = input("What room size are you staying? Small, Medium, or Large ")
+imaging = input("Did you have any X-ray done? Y or N ")
+rehab = input("Did you have therapy session? Y or N ")
+
+bill = 0
+
+if size == "Small":
+  bill += 100
+elif size == "Medium":
+  bill += 200
+else:
+  bill += 300
+
+if imaging == "Y":
+  if size == "Small":
+    bill += 50
+  else:
+    bill += 100
+
+if rehab == "Y":
+  if size == "Small":
+    bill += 100
+  else:
+    bill += 250
+
+print(f"Your daily hospital bill is: ${bill}")
