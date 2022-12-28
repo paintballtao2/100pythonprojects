@@ -1,0 +1,12 @@
+import random
+
+names_string = input("Give me everybody's names followed by their wish gift, each name separated by a comma. ")
+names = names_string.split(", ")
+
+num_items = len(names)
+
+random_choice = random.randint(0, num_items - 1)
+
+person_you_will_buy_gift_for = names[random_choice]
+
+print("You are buying christmas gift exchange for " + person_you_will_buy_gift_for + ".")
