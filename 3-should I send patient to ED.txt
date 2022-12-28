@@ -1,0 +1,16 @@
+print("Welcome to first day of being a Doctor!")
+print("Your mission is to decide if to send the patient to A&E!")
+
+choice1 = input('Is patient conscious? Type "yes" or "no" \n').lower()
+if choice1 == "yes":
+  choice2 = input('Are patient\'s vital signs stable? Type "yes" or "no" \n').lower()
+  if choice2 == "yes":
+    choice3 = input('Is patient orientated to time, place, person? Type "yes" or "no" \n').lower()
+    if choice3 == "yes":
+      print("Continue your consult in your lonely room.")
+    elif choice3 == "no":
+      print("Try harder newbie.")
+  else:
+    print("Call an ambulance now!")
+else:
+  print("What are you waiting for?!")
