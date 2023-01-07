@@ -20,3 +20,7 @@ for _ in range(200):
     tim.color(random_color())
     tim.forward(30)
     tim.setheading(random.choice(directions))
+    
+
+screen = t.Screen()
+screen.exitonclick()
